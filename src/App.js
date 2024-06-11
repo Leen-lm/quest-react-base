@@ -1,24 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import ParagrafoSinalizado from './components/paragrafos/paragrafo-estilizado';
+import ParagrafoPadrao from './components/paragrafos/paragrafo-normal';
+import ButtonLabel from './components/button/button';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1>Meus Parágrafos</h1>
+      <ParagrafoSinalizado />
+      <ParagrafoPadrao />
+      <ButtonLabel label ='BOTAO DA ESQUERDA'/>
+      <ButtonLabel label ='BOTAO DA DIREITA'/>
+    </>
   );
 }
 
